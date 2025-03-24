@@ -7,10 +7,10 @@
 // 942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
 
 function digitalRoot(n) {
-  while (n > 10) {
+  while (n >= 10) {
     n = `${n}`.split("").reduce((cur, acc) => +cur + +acc);
   }
   return n;
 }
 
-console.log(digitalRoot(942));
+console.log(digitalRoot(10));
