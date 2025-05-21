@@ -7,7 +7,7 @@ function findUnique(arr) {
   }
   for (nums in unique) {
     if (unique[nums] === 1) {
-      return nums;
+      return +nums;
     }
   }
 }
